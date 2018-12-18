@@ -1,0 +1,41 @@
+#include<iostream>
+using namespace std;
+class complex{
+int r,i;
+public:
+    complex(int a=0,int b=0)
+    {
+        r=a;
+        i=b;
+    }
+  complex add(complex x,complex y);
+   /* {   complex t;
+        t.r=x.r+y.r;
+        t.i=x.i+y.i;
+        return t;
+    }*/
+    void display();
+  /*  {
+        cout<<"addition="<<r<<"+i"<<i<<endl;
+    }*/
+
+};
+int main()
+{
+    complex p(1,2),q(3,4),s1,s2;
+   s2 = s1.add(p,q);
+    s2.display();
+
+    return 0;
+
+}
+complex complex :: add(complex x,complex y)
+    {   complex t;
+        t.r=x.r+y.r;
+        t.i=x.i+y.i;
+        return t;}
+
+         void complex::display()
+    {
+        cout<<"addition="<<r<<"+i"<<i<<endl;
+    }
